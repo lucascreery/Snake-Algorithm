@@ -275,6 +275,7 @@ int main(int argc, char **argv){
 
   if(!createHailton()){
     printf("Failed to create Hamilton Cycle. :(\n");
+    return 1;
   }else{
     for(int i = 0; i < height; i++){
       for(int j = 0; j < width; j++){
@@ -294,6 +295,10 @@ int main(int argc, char **argv){
     if(elapsed > 10 && !fail){
       updateMap();
       t = clock();
+    }
+    if(fail){
+      window.close();
+      return 0;
     }
 
     sf::Event event;
