@@ -296,10 +296,6 @@ int main(int argc, char **argv){
       updateMap();
       t = clock();
     }
-    if(fail){
-      window.close();
-      return 0;
-    }
 
     sf::Event event;
     while (window.pollEvent(event)) {
