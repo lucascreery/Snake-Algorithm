@@ -24,4 +24,4 @@ The program can be run through PowerShell:
 ```batch
 ./snake [width] [height]
 ```
-[width] is and integer representing the desired width of the snake game measured in blocks, and likewise [height] is the desired height of the snake game.
+[width] is an integer representing the desired width of the snake game measured in blocks, and likewise [height] is the desired height of the snake game.
